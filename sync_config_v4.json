@@ -1,0 +1,51 @@
+{
+  "tasks": [
+    {
+      "type": "SYNC",
+      "group_id": 1,
+      "src": "F:\\Project\\Hugo_blog\\NOTE\\content\\posts",
+      "dst": "F:\\Project\\astro_blog\\content\\posts",
+      "root": "",
+      "cmd": "",
+      "desc": ""
+    },
+    {
+      "type": "CMD",
+      "group_id": 2,
+      "src": "",
+      "dst": "",
+      "root": "F:\\Project\\Hugo_blog\\NOTE",
+      "cmd": "hugo --gc --minify --cleanDestinationDir",
+      "desc": "hugo --minify"
+    },
+    {
+      "type": "CMD",
+      "group_id": 2,
+      "src": "",
+      "dst": "",
+      "root": "F:\\Project\\astro_blog\\themes\\Ryze",
+      "cmd": "npm run build",
+      "desc": "npm run build"
+    },
+    {
+      "type": "SYNC",
+      "group_id": 3,
+      "src": "F:\\Project\\Hugo_blog\\NOTE\\public",
+      "dst": "Z:\\hugo_blog\\public",
+      "root": "",
+      "cmd": "",
+      "desc": ""
+    },
+    {
+      "type": "SYNC",
+      "group_id": 3,
+      "src": "F:\\Project\\astro_blog\\themes\\Ryze\\dist",
+      "dst": "Z:\\astro_blog\\public",
+      "root": "",
+      "cmd": "",
+      "desc": ""
+    }
+  ],
+  "group_order": "1,2,3",
+  "force_copy": true
+}
