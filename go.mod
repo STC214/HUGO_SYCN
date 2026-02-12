@@ -1,4 +1,4 @@
-module hugosync
+module hugo-sync-tool2
 
 go 1.25.6
 
